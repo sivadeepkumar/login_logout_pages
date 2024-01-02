@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block start %}
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="d-flex flex-direction justify-content-center">
+    <form method='POST' enctype="multipart/form-data">    
+        {{form.as_p}}
+        
+        <div class="d-flex flex-direction justify-content-center">
+            <button type='submit' name="button">Login</button>
+        </div>
+        {% csrf_token %}
+    </form>
+</div>
+
+
+{% endblock %}
+
